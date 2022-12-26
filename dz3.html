@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style_dz3.css">
+        <meta charset="utf-8">
+        <title>dz3</title>
+</head>
+<body>
+    <ul class="book">
+        <ol >1.Зов Ктулху Рассказ, Лавкрафт Говард Филлипс</ol>
+        <ol>2.Преступление и наказание Роман, Фёдор Достоевский</ol>
+        <ol>3.Балакин В. Д. Творцы Священной Римской империи</ol>
+    </ul>
+    <script>
+        var list = document.querySelectorAll('.book ol');
+        function setSelected() {
+  document.querySelectorAll('.book ol.selected').forEach(function (el) {
+    el.classList.remove('selected');
+  });
+  this.classList.add('selected'); 
+}
+list.forEach(function(ol) {
+   ol.onclick = setSelected;
+});
+    </script> 
+</body>
+</html>

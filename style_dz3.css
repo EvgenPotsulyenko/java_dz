@@ -1,0 +1,7 @@
+.book ol {
+    cursor: pointer;
+  }
+  
+  .selected {
+    color: orange;
+  }
